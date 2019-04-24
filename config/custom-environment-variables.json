@@ -1,0 +1,11 @@
+{
+    "app": {
+        "port": "PORT"
+    },
+    "database": {
+        "connectionUri": "DATABASE_URL"
+    },
+    "jwt": {
+        "secret": "JWT_SECRET"
+    }
+}

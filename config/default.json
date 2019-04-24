@@ -1,0 +1,21 @@
+{
+    "app": {
+        "port": 4000,
+        "version": "1.0.0"
+    },
+    "database": {
+        "connectionUri": "postgresql://pankaj@localhost/caabil"
+    },
+    "jwt": {
+        "secret": "it is a big secret",
+        "expiry": 3600
+    },
+    "cors": {
+        "origin": "*",
+        "maxAge": 864000
+    },
+    "logger" : {
+        "console": true,
+        "level": "info"
+    }
+}

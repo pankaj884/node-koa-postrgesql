@@ -1,0 +1,63 @@
+{
+  "name": "koa-web-api",
+  "version": "1.0.0",
+  "description": "Koa MVC",
+  "main": "build/app.js",
+  "bin": "build/app.js",
+  "scripts": {
+    "build": "node_modules/.bin/tsc",
+    "test": "npm run build && mocha --timeout 30000 ./tests/*.test.js",
+    "start": "npm run build && node ./build/app.js",
+    "build:watch": "npm run build -- -w",
+    "start:watch": "npm run start -- -w"
+  },
+  "keywords": [],
+  "author": "Adnan Kamili",
+  "license": "ISC",
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "targets": [
+      "node8-win-x64"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "bcryptjs": "^2.4.3",
+    "class-sanitizer": "0.0.5",
+    "class-validator": "^0.8.5",
+    "class-validator-jsonschema": "^1.1.1",
+    "config": "^1.30.0",
+    "jsonwebtoken": "^7.4.3",
+    "kcors": "^2.2.1",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-jwt": "^3.3.1",
+    "koa-router": "^7.4.0",
+    "pg": "^7.4.1",
+    "reflect-metadata": "^0.1.12",
+    "routing-controllers": "^0.7.7",
+    "routing-controllers-openapi": "^1.2.1",
+    "typedi": "^0.5.2",
+    "typeorm": "^0.1.20",
+    "winston": "^2.4.1",
+    "winston-daily-rotate-file": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^1.0.0",
+    "@types/bcryptjs": "^2.4.1",
+    "@types/config": "0.0.32",
+    "@types/jsonwebtoken": "^7.2.6",
+    "@types/koa": "^2.0.45",
+    "@types/koa-bodyparser": "^3.0.26",
+    "@types/koa-router": "^7.0.27",
+    "@types/node": "^8.10.4",
+    "@types/winston": "^2.3.9",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.5.3",
+    "typescript": "^2.8.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
